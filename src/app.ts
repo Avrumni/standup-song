@@ -2,24 +2,15 @@ import schedule from 'node-schedule';
 import opn from 'opn';
 import fs from 'fs';
 
-const songs = [{
-    name: 'Peter Gabriel- Sledge Hammer',
-    minutes: 5,
-    seconds: 45,
-    url: 'https://www.youtube.com/watch?v=OJWJE0x7T4Q'
-}, {
-    name: 'The Glitch Mob - Between Two Points (feat. Swan)',
-    minutes: 5,
-    seconds: 33,
-    url: 'https://www.youtube.com/watch?v=eHFx11tUO1M'
-}, {
-    name: 'Toto - Africa',
-    minutes: 4,
-    seconds: 35,
-    url: 'https://www.youtube.com/watch?v=FTQbiNvZqaY'
-}];
+const file = fs.readFileSync('./song.db.json', { encoding: 'utf8' });
+const songs: Array<{
+    name: string;
+    seconds: number;
+    minutes: number;
+    url: string;
+}> = JSON.parse(file);
 
-schedule.scheduleJob('0 * * * * *', () => {
+schedule.scheduleJob('0 20 9 * * *', () => {
     const i = Math.floor(Math.random() * songs.length);
     const song = songs[i];
     const secondsTillStandup = 10 * 60;
@@ -28,7 +19,6 @@ schedule.scheduleJob('0 * * * * *', () => {
 
     console.log('"' + song.name + '" will play in ' + delaySeconds + ' seconds');
     setTimeout(() => {
-        console.log('Play: ' + song.name);
         opn(song.url);
     }, delaySeconds * 1000)
 });
