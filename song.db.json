@@ -16,5 +16,23 @@
         "minutes": 4,
         "seconds": 35,
         "url": "https://www.youtube.com/watch?v=FTQbiNvZqaY"
+    },
+    {
+        "name": "Never Enough",
+        "minutes": 3,
+        "seconds": 27,
+        "url": "https://www.youtube.com/watch?v=rQWZK5U233s"
+    },
+    {
+        "name": "Lets get it started",
+        "minutes": 3,
+        "seconds": 45,
+        "url": "https://www.youtube.com/watch?v=IKqV7DB8Iwg"
+    },
+    {
+        "name": "Muse - Knights of Cydonia",
+        "minutes": 6,
+        "seconds": 6,
+        "url": "https://www.youtube.com/watch?v=z9D71pQaTnc"
     }
 ]

@@ -4,26 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_schedule_1 = __importDefault(require("node-schedule"));
+const opn_1 = __importDefault(require("opn"));
 const fs_1 = __importDefault(require("fs"));
 const file = fs_1.default.readFileSync('./song.db.json', { encoding: 'utf8' });
-console.log(file);
-const songs = [{
-        name: 'Peter Gabriel- Sledge Hammer',
-        minutes: 5,
-        seconds: 45,
-        url: 'https://www.youtube.com/watch?v=OJWJE0x7T4Q'
-    }, {
-        name: 'The Glitch Mob - Between Two Points (feat. Swan)',
-        minutes: 5,
-        seconds: 33,
-        url: 'https://www.youtube.com/watch?v=eHFx11tUO1M'
-    }, {
-        name: 'Toto - Africa',
-        minutes: 4,
-        seconds: 35,
-        url: 'https://www.youtube.com/watch?v=FTQbiNvZqaY'
-    }];
-node_schedule_1.default.scheduleJob('0 * * * * *', () => {
+const songs = JSON.parse(file);
+node_schedule_1.default.scheduleJob('0 20 9 * * *', () => {
     const i = Math.floor(Math.random() * songs.length);
     const song = songs[i];
     const secondsTillStandup = 10 * 60;
@@ -31,7 +16,6 @@ node_schedule_1.default.scheduleJob('0 * * * * *', () => {
     const delaySeconds = secondsTillStandup - secondsForSong;
     console.log('"' + song.name + '" will play in ' + delaySeconds + ' seconds');
     setTimeout(() => {
-        console.log('Play: ' + song.name);
-        // opn(song.url);
+        opn_1.default(song.url);
     }, delaySeconds * 1000);
 });

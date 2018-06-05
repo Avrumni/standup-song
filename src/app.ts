@@ -1,6 +1,7 @@
 import schedule from 'node-schedule';
 import opn from 'opn';
 import fs from 'fs';
+const random = require('crypto-random');
 
 const file = fs.readFileSync('./song.db.json', { encoding: 'utf8' });
 const songs: Array<{
@@ -11,7 +12,7 @@ const songs: Array<{
 }> = JSON.parse(file);
 
 schedule.scheduleJob('0 20 9 * * *', () => {
-    const i = Math.floor(Math.random() * songs.length);
+    const i = Math.floor(random.range(0, songs.length - 1));
     const song = songs[i];
     const secondsTillStandup = 10 * 60;
     const secondsForSong = song.seconds + (song.minutes * 60);
