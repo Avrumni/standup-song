@@ -11,15 +11,13 @@ const songs: Array<{
     url: string;
 }> = JSON.parse(file);
 
-schedule.scheduleJob('0 20 9 * * *', () => {
-    const i = Math.floor(random.range(0, songs.length - 1));
-    const song = songs[i];
-    const secondsTillStandup = 10 * 60;
-    const secondsForSong = song.seconds + (song.minutes * 60);
-    const delaySeconds = secondsTillStandup - secondsForSong;
+const i = Math.floor(random.range(0, songs.length - 1));
+const song = songs[i];
+const secondsTillStandup = 10 * 60;
+const secondsForSong = song.seconds + (song.minutes * 60);
+const delaySeconds = secondsTillStandup - secondsForSong;
 
-    console.log('"' + song.name + '" will play in ' + delaySeconds + ' seconds');
-    setTimeout(() => {
-        opn(song.url);
-    }, delaySeconds * 1000)
-});
+console.log('"' + song.name + '" will play in ' + delaySeconds + ' seconds');
+setTimeout(() => {
+    opn(song.url);
+}, delaySeconds * 1000)

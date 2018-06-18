@@ -1,38 +1,56 @@
 [
-    {
-        "name": "Peter Gabriel- Sledge Hammer",
-        "minutes": 5,
-        "seconds": 45,
-        "url": "https://www.youtube.com/watch?v=OJWJE0x7T4Q"
-    },
-    {
-        "name": "The Glitch Mob - Between Two Points (feat. Swan)",
-        "minutes": 5,
-        "seconds": 33,
-        "url": "https://www.youtube.com/watch?v=eHFx11tUO1M"
-    },
-    {
-        "name": "Toto - Africa",
-        "minutes": 4,
-        "seconds": 35,
-        "url": "https://www.youtube.com/watch?v=FTQbiNvZqaY"
-    },
-    {
-        "name": "Never Enough",
-        "minutes": 3,
-        "seconds": 27,
-        "url": "https://www.youtube.com/watch?v=rQWZK5U233s"
-    },
-    {
-        "name": "Lets get it started",
-        "minutes": 3,
-        "seconds": 45,
-        "url": "https://www.youtube.com/watch?v=IKqV7DB8Iwg"
-    },
-    {
-        "name": "Muse - Knights of Cydonia",
-        "minutes": 6,
-        "seconds": 6,
-        "url": "https://www.youtube.com/watch?v=z9D71pQaTnc"
-    }
+  {
+    "name": "Peter Gabriel- Sledge Hammer",
+    "minutes": 5,
+    "seconds": 45,
+    "url": "https://www.youtube.com/watch?v=OJWJE0x7T4Q"
+  },
+  {
+    "name": "The Glitch Mob - Between Two Points (feat. Swan)",
+    "minutes": 5,
+    "seconds": 33,
+    "url": "https://www.youtube.com/watch?v=eHFx11tUO1M"
+  },
+  {
+    "name": "Toto - Africa",
+    "minutes": 4,
+    "seconds": 35,
+    "url": "https://www.youtube.com/watch?v=FTQbiNvZqaY"
+  },
+  {
+    "name": "Darude - MemeStorm",
+    "minutes": 3,
+    "seconds": 52,
+    "url": "https://www.youtube.com/watch?v=y6120QOlsfU"
+  },
+  {
+    "name": "Never Enough",
+    "minutes": 3,
+    "seconds": 27,
+    "url": "https://www.youtube.com/watch?v=rQWZK5U233s"
+  },
+  {
+    "name": "Lets get it started",
+    "minutes": 3,
+    "seconds": 45,
+    "url": "https://www.youtube.com/watch?v=IKqV7DB8Iwg"
+  },
+  {
+    "name": "Muse - Knights of Cydonia",
+    "minutes": 6,
+    "seconds": 6,
+    "url": "https://www.youtube.com/watch?v=z9D71pQaTnc"
+  },
+  {
+    "name": "House of the rising sun - The Animals",
+    "minutes": 4,
+    "seconds": 8,
+    "url": "https://www.youtube.com/watch?v=5A-4VGfx5lU"
+  },
+  {
+    "name": "Everything is AWESOME!!! - Lego Movie",
+    "minutes": 2,
+    "seconds": 44,
+    "url": "https://www.youtube.com/watch?v=StTqXEQ2l-Y"
+  }
 ]
