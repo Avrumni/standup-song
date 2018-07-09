@@ -18,10 +18,22 @@
     "url": "https://www.youtube.com/watch?v=FTQbiNvZqaY"
   },
   {
+    "name": "U2 - Where the streets have no name",
+    "minutes": 7,
+    "seconds": 12,
+    "url": "https://www.youtube.com/watch?v=GzZWSrr5wFI"
+  },
+  {
     "name": "Darude - MemeStorm",
     "minutes": 3,
     "seconds": 52,
     "url": "https://www.youtube.com/watch?v=y6120QOlsfU"
+  },
+  {
+    "name": "Fatboy Slim - Praise you",
+    "minutes": 3,
+    "seconds": 46,
+    "url": "https://www.youtube.com/watch?v=ruAi4VBoBSM"
   },
   {
     "name": "Never Enough",
@@ -46,6 +58,12 @@
     "minutes": 4,
     "seconds": 8,
     "url": "https://www.youtube.com/watch?v=5A-4VGfx5lU"
+  },
+  {
+    "name": "Monty Python - Always look on the Bright Side of Life",
+    "minutes": 3,
+    "seconds": 10,
+    "url": "https://www.youtube.com/watch?v=SJUhlRoBL8M"
   },
   {
     "name": "Everything is AWESOME!!! - Lego Movie",
