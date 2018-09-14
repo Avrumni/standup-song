@@ -26,6 +26,7 @@
   "devDependencies": {
     "@types/node-schedule": "^1.2.2",
     "@types/opn": "^5.1.0",
+    "node-notifier": "^5.2.1",
     "typescript": "^2.8.3"
   }
 }

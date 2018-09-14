@@ -1,9 +1,10 @@
-import schedule from 'node-schedule';
-import opn from 'opn';
 import fs from 'fs';
-const random = require('crypto-random');
+import opn from 'opn';
 
-const file = fs.readFileSync('./song.db.json', { encoding: 'utf8' });
+const random = require('crypto-random');
+const notifier = require('node-notifier');
+
+const file = fs.readFileSync('./song.db.json', {encoding: 'utf8'});
 const songs: Array<{
     name: string;
     seconds: number;
@@ -15,9 +16,16 @@ const i = Math.floor(random.range(0, songs.length - 1));
 const song = songs[i];
 const secondsTillStandup = 10 * 60;
 const secondsForSong = song.seconds + (song.minutes * 60);
-const delaySeconds = secondsTillStandup - secondsForSong;
+const timeoutDelay: number = secondsTillStandup - secondsForSong;
+const delayMinutes: string = ((timeoutDelay / 60) as number).toPrecision(2);
+const delaySeconds: number = (timeoutDelay % 60);
 
-console.log('"' + song.name + '" will play in ' + delaySeconds + ' seconds');
+notifier.notify({
+    title: 'Standup Song',
+    message: `"${song.name}" will play in ${delayMinutes} minutes and ${delaySeconds} seconds`
+});
+
+console.log('"' + song.name + '" will play in ' + timeoutDelay + ' seconds');
 setTimeout(() => {
     opn(song.url);
-}, delaySeconds * 1000)
+}, timeoutDelay * 1000);
