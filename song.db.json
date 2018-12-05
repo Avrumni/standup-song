@@ -19,9 +19,9 @@
   },
   {
     "name": "U2 - Where the streets have no name",
-    "minutes": 7,
-    "seconds": 12,
-    "url": "https://www.youtube.com/watch?v=GzZWSrr5wFI"
+    "minutes": 5,
+    "seconds": 37,
+    "url": "https://www.youtube.com/watch?v=3FsrPEUt2Dg"
   },
   {
     "name": "Darude - MemeStorm",
@@ -118,5 +118,29 @@
     "minutes": 4,
     "seconds": 45,
     "url": "https://www.youtube.com/watch?v=XCiDuy4mrWU"
+  },
+  {
+    "name": "Nyan Cat",
+    "minutes": 3,
+    "seconds": 36,
+    "url": "https://www.youtube.com/watch?v=QH2-TGUlwu4"
+  },
+  {
+    "name": "Can't touch this - MC Hammer",
+    "minutes": 4,
+    "seconds": 38,
+    "url": "https://www.youtube.com/watch?v=otCpCn0l4Wo"
+  },
+  {
+    "name": "Brown Eyed Gril - Van Morrison",
+    "minutes": 3,
+    "seconds": 4,
+    "url": "https://www.youtube.com/watch?v=UfmkgQRmmeE"
+  },
+  {
+    "name": "$stdout - Pair Programming",
+    "minutes": 4,
+    "seconds": 14,
+    "url": "https://www.youtube.com/watch?v=psw9G9Lp7ac"
   }
 ]
